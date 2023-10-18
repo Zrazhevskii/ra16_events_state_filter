@@ -1,0 +1,15 @@
+.box-img {
+    border: 2px solid green;
+    max-width: 270px;
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.image:hover {
+    height: 110%;
+    width:  110%;
+}

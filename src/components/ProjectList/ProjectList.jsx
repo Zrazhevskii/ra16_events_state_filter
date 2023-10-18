@@ -1,9 +1,16 @@
-import React, { Component } from 'react'
+import React from 'react';
+import './ProjectList.css'
 
-export default class ProjectList extends Component {
-  render() {
+const ProjectList = ({projects}) => {
+    let index = 0;
+
     return (
-      <div>ProjectList</div>
-    )
-  }
-}
+      projects.map((item) => (
+        <div className='box-img' key={index++}>
+           <img src={item.img} alt='' className='image'/>
+        </div>
+      ))
+    );
+};
+
+export default ProjectList;

@@ -1,9 +1,22 @@
-import React, { Component } from 'react'
+import React from 'react';
+import './Toolbar.css'
 
-export default class Toolbar extends Component {
-  render() {
-    return (
-      <div>Toolbar</div>
+const Toolbar = ({ filters, selected, onSelectFilter }) => {
+    let index = 0;
+
+    return (    
+        <div className='toolbar'>
+            {filters.map((item) => (
+                <button
+                    onClick={onSelectFilter}
+                    key={index++}
+                    className={item === selected ? 'active' : ''}
+                >
+                    {item}
+                </button>
+            ))}
+        </div>
     )
-  }
-}
+};
+
+export default Toolbar;
