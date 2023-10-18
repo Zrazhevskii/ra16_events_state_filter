@@ -1,10 +1,9 @@
-import React from 'react';
-import './Toolbar.css'
+import './Toolbar.css';
 
 const Toolbar = ({ filters, selected, onSelectFilter }) => {
     let index = 0;
 
-    return (    
+    return (
         <div className='toolbar'>
             {filters.map((item) => (
                 <button
@@ -16,7 +15,7 @@ const Toolbar = ({ filters, selected, onSelectFilter }) => {
                 </button>
             ))}
         </div>
-    )
+    );
 };
 
 export default Toolbar;

@@ -16,7 +16,7 @@ function Portfolio(props) {
         buttons.forEach((item) => item.classList.remove('active'));
 
         evt.target.classList.add('active');
-        
+
         activeCategory = evt.target.textContent;
         activeCategory === 'All'
             ? (newArr = data)

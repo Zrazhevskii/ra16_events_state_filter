@@ -1,16 +1,13 @@
-import React from 'react';
-import './ProjectList.css'
+import './ProjectList.css';
 
-const ProjectList = ({projects}) => {
+const ProjectList = ({ projects }) => {
     let index = 0;
 
-    return (
-      projects.map((item) => (
+    return projects.map((item) => (
         <div className='box-img' key={index++}>
-           <img src={item.img} alt='' className='image'/>
+            <img src={item.img} alt='' className='image' />
         </div>
-      ))
-    );
+    ));
 };
 
 export default ProjectList;
