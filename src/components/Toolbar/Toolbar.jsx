@@ -1,6 +1,6 @@
 import './Toolbar.css';
 
-const Toolbar = ({ filters, selected, onSelectFilter }) => {
+const Toolbar = ({ filters, selected='All', onSelectFilter }) => {
     let index = 0;
 
     return (
